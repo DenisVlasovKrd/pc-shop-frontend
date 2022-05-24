@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e": "cypress run --config-file cypress.json",
+    "e2e:local": "cypress open --config-file cypress.json"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cypress/react": "^5.12.5",
+    "@cypress/webpack-dev-server": "^1.8.4",
+    "cypress": "^9.7.0"
   }
 }
